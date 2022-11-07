@@ -1,0 +1,31 @@
+﻿@model IEnumerable<yourMemo.Models.UploadForm>
+<html>
+<head>
+    <title>Display</title>
+</head>
+
+<body>
+    <div class="showListDiv">
+
+
+
+            <div class="wrapper" style="background-color:antiquewhite">
+             @foreach (var item in Model){
+                <div class="item1">
+                    <div class="polaroid">
+                        <img src="data:image/png;base64,@Html.DisplayFor(modelItem => item.ImgtoBase64)" style=" display: block;
+ margin: 0 auto;" />
+                        <div class="caption"> @Html.DisplayFor(modelItem => item.Message)</div>
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </div>
+                </div>
+             }
+        </div>
+
+
+
+
+        <script src="/js/script.js"></script>
+    </div>
+</body>
+</html>

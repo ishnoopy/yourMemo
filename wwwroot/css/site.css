@@ -1,0 +1,1201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
+
+html {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url(/css/components/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+    html::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+.btn-default {
+    color: white;
+    margin-top: 1.5vh;
+    background-color: rgb(138, 109, 73);
+    border-style: none;
+    border-radius: 1vw;
+    width: 30vw;
+    height: 5vh;
+    transition: transform 0.4s;
+}
+
+    .btn-default p {
+        color: white;
+    }
+
+    .btn-default:hover {
+        transform: scale(1.1);
+    }
+
+h1, h3 {
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(218, 212, 212);
+}
+
+.container {
+    padding: 2vh 5vh;
+}
+
+.number {
+    color: #3D4045;
+}
+
+.navbar {
+    min-height: 5vh;
+}
+
+    .navbar #mainLogo {
+        height: 30vw;
+        margin-left: -10vw;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar ul {
+        list-style: none;
+    }
+
+    .navbar .container {
+        background-color: black;
+    }
+
+    .navbar .row {
+        width: 80%;
+        margin: auto;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+    }
+
+        .navbar .navbar .main-menu {
+            display: flex;
+        }
+
+    .navbar .main-menu li a {
+        display: inline-block;
+        padding: 10px 20px;
+        transition: 0.5s;
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(244, 244, 244);
+        border-radius: 5px;
+        color: #201e1d;
+    }
+
+    .navbar .menu-btn {
+        display: none;
+    }
+
+    .navbar .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(https://i.postimg.cc/vZrkVwB5/joe-woods-4-Zaq5x-Y5-M-c-unsplash.jpg) no-repeat center center/cover;
+    }
+
+    .navbar .row-content h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar .row-content p {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+.firstPageTitleDiv {
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "div1 div1" "div2 div2" "div3 div3" "div4 div4";
+}
+
+    .firstPageTitleDiv .div1 {
+        grid-area: div1;
+        width: 60%;
+    }
+
+        .firstPageTitleDiv .div1 p {
+            color: #FEC336;
+        }
+
+    .firstPageTitleDiv .div2 {
+        grid-area: div2;
+    }
+
+    .firstPageTitleDiv .div3 {
+        grid-area: div3;
+        width: 70%;
+    }
+
+    .firstPageTitleDiv .div4 {
+        grid-area: div4;
+        display: flex;
+        width: 70%;
+        margin-top: 1vh;
+    }
+
+.firstPageBenefitDiv {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "div1Number div1Message div1Icon" "div2Number div2Message div2Icon";
+}
+
+    .firstPageBenefitDiv .div1Number {
+        grid-area: div1Number;
+    }
+
+    .firstPageBenefitDiv .div1Message {
+        grid-area: div1Message;
+    }
+
+        .firstPageBenefitDiv .div1Message .div1P {
+            margin: 2vh 0vh;
+        }
+
+    .firstPageBenefitDiv .div1Icon {
+        grid-area: div1Icon;
+        display: flex;
+        justify-content: end;
+    }
+
+        .firstPageBenefitDiv .div1Icon img {
+            margin-right: 1vw;
+            margin-top: 20%;
+            max-width: 60%;
+            max-height: 40%;
+        }
+
+    .firstPageBenefitDiv .div2Number {
+        grid-area: div2Number;
+    }
+
+    .firstPageBenefitDiv .div2Message {
+        grid-area: div2Message;
+    }
+
+        .firstPageBenefitDiv .div2Message .div2P {
+            margin: 2vh 0vh;
+        }
+
+    .firstPageBenefitDiv .div2Icon {
+        grid-area: div2Icon;
+        display: flex;
+        justify-content: end;
+    }
+
+        .firstPageBenefitDiv .div2Icon img {
+            margin-right: 1vw;
+            margin-top: 20%;
+            max-width: 60%;
+            max-height: 40%;
+        }
+
+.HeroDiv #HeroImage {
+    max-width: 100%;
+    max-height: 40vh;
+    margin: -2vh;
+}
+
+.secondPageDiv {
+    padding: 5vw;
+    background-color: white;
+}
+
+    .secondPageDiv h1 {
+        font-size: 3rem;
+    }
+
+    .secondPageDiv p, .secondPageDiv h1, .secondPageDiv h3 {
+        color: #201e1d;
+    }
+
+    .secondPageDiv .btn-default p {
+        color: white;
+    }
+
+    .secondPageDiv .secondPageAboutDescDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "div1" "div2" "div3";
+    }
+
+        .secondPageDiv .secondPageAboutDescDiv .div1 {
+            grid-area: div1;
+        }
+
+            .secondPageDiv .secondPageAboutDescDiv .div1 h3 {
+                margin-top: 5vh;
+            }
+
+        .secondPageDiv .secondPageAboutDescDiv .div2 {
+            grid-area: div2;
+            margin-bottom: 5vh;
+        }
+
+        .secondPageDiv .secondPageAboutDescDiv .div3 {
+            grid-area: div3;
+        }
+
+.thirdPageDiv {
+    min-height: 50vh;
+    background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url(/css/components/ParallaxBg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthPageDiv_contain {
+    background-image: url("/css/components/PolaroidDivBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourthPageDiv p {
+    font-size: 1rem;
+    color: #201e1d;
+}
+
+.fourthPageDiv h1 {
+    color: #201e1d;
+}
+
+.fourthPageDiv .fourthPageDescDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "div1Title" "div1Desc";
+}
+
+.fourthPageDiv .div1Title {
+    grid-area: div1Title;
+    margin-top: 5vh;
+}
+
+.fourthPageDiv .div1Desc {
+    grid-area: div1Desc;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 0.5rem;
+    min-width: 80vw;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+    .polaroid > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+}
+
+    .item .polaroid:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.35s;
+    }
+
+    .item:nth-of-type(4n+1) {
+        transform: scale(0.8, 0.8) rotate(5deg);
+        transition: all 0.35s;
+    }
+
+        .item:nth-of-type(4n+1) .polaroid:before {
+            transform: rotate(6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+
+    .item:nth-of-type(4n+2) {
+        transform: scale(0.8, 0.8) rotate(-5deg);
+        transition: all 0.35s;
+    }
+
+        .item:nth-of-type(4n+2) .polaroid:before {
+            transform: rotate(-6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+
+    .item:nth-of-type(4n+4) {
+        transform: scale(0.8, 0.8) rotate(3deg);
+        transition: all 0.35s;
+    }
+
+        .item:nth-of-type(4n+4) .polaroid:before {
+            transform: rotate(4deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+        }
+
+    .item:nth-of-type(4n+3) {
+        transform: scale(0.8, 0.8) rotate(-3deg);
+        transition: all 0.35s;
+    }
+
+        .item:nth-of-type(4n+3) .polaroid:before {
+            transform: rotate(-4deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+        }
+
+    .item:hover {
+        filter: none;
+        transform: scale(1, 1) rotate(0deg) !important;
+        transition: all 0.35s;
+    }
+
+        .item:hover .polaroid:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transform: rotate(0deg);
+            height: 90%;
+            width: 90%;
+            bottom: 0%;
+            right: 5%;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+            transition: all 0.35s;
+        }
+
+
+
+.item1 {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+    .item1 .polaroid:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.35s;
+    }
+
+    .item1:nth-of-type(4n+1) {
+        transform: scale(0.8, 0.8) rotate(5deg);
+        transition: all 0.35s;
+    }
+
+        .item1:nth-of-type(4n+1) .polaroid:before {
+            transform: rotate(6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+
+    .item1:nth-of-type(4n+2) {
+        transform: scale(0.8, 0.8) rotate(-5deg);
+        transition: all 0.35s;
+    }
+
+        .item1:nth-of-type(4n+2) .polaroid:before {
+            transform: rotate(-6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+
+    .item1:nth-of-type(4n+4) {
+        transform: scale(0.8, 0.8) rotate(3deg);
+        transition: all 0.35s;
+    }
+
+        .item1:nth-of-type(4n+4) .polaroid:before {
+            transform: rotate(4deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+        }
+
+    .item1:nth-of-type(4n+3) {
+        transform: scale(0.8, 0.8) rotate(-3deg);
+        transition: all 0.35s;
+    }
+
+        .item1:nth-of-type(4n+3) .polaroid:before {
+            transform: rotate(-4deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+        }
+
+    .item1:hover {
+        filter: none;
+        transform: scale(1, 1) rotate(0deg) !important;
+        transition: all 0.35s;
+    }
+
+        .item1:hover .polaroid:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transform: rotate(0deg);
+            height: 90%;
+            width: 90%;
+            bottom: 0%;
+            right: 5%;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+            transition: all 0.35s;
+        }
+
+
+.footer {
+    min-height: 20vh;
+    padding: 5vh;
+    background-color: rgb(138, 109, 73);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 10vh;
+}
+
+    .footer h2 {
+        font-size: 2rem;
+        color: burlywood;
+    }
+
+    .footer p {
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .footer .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer .footer-icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+        .footer .footer-icons i {
+            margin: 1vw;
+        }
+
+    .footer .copyright {
+        margin-top: 5vh;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+.RegistrationDiv .login-page {
+    width: 100%;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.RegistrationDiv .form {
+    position: relative;
+    z-index: 0;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+    .RegistrationDiv .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .RegistrationDiv .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: brown;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        transition: all 0.5 ease;
+        cursor: pointer;
+    }
+
+        .RegistrationDiv .form button:hover, .RegistrationDiv .form button:active, .RegistrationDiv .form button:focus {
+            background: burlywood;
+        }
+
+    .RegistrationDiv .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+
+        .RegistrationDiv .form .message a {
+            color: brown;
+            text-decoration: none;
+        }
+
+    .RegistrationDiv .form .register-form {
+        display: none;
+    }
+
+.RegistrationDiv .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+    .RegistrationDiv .container:before, .RegistrationDiv .container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .RegistrationDiv .container .info {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+        .RegistrationDiv .container .info h1 {
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 36px;
+            font-weight: 300;
+            color: #1a1a1a;
+        }
+
+        .RegistrationDiv .container .info span {
+            color: #4d4d4d;
+            font-size: 12px;
+        }
+
+            .RegistrationDiv .container .info span a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .RegistrationDiv .container .info span .fa {
+                color: #EF3B3A;
+            }
+
+.RegistrationDiv body {
+    background: #76b852; /* fallback for old browsers */
+    background: rgb(141, 194, 111);
+    background: linear-gradient(90deg, rgb(141, 194, 111) 0%, rgb(118, 184, 82) 50%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.uploadBody {
+    background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url(/webApp/components/pexels-lisa-fotios-1252983.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.UploadingDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+    .UploadingDiv #uploadBtn {
+        margin-top: 10vh;
+        width: 50%;
+        background-color: brown;
+        color: #FFFFFF;
+        border-radius: 5px;
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+        .UploadingDiv #uploadBtn:hover {
+            background-color: burlywood;
+        }
+
+    .UploadingDiv textarea {
+        width: 100%;
+        height: 50%;
+    }
+
+#message {
+    height: 20vh;
+}
+
+.UploadingDiv h3 {
+    color: #000000;
+    text-align: start;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.UploadingDiv .uploading-page {
+    width: 100%;
+    padding: 8% 0 0;
+}
+
+.UploadingDiv .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    height: 50vh;
+    margin: 0 auto 100px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+    .UploadingDiv .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .UploadingDiv .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: brown;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        transition: all 0.5 ease;
+        cursor: pointer;
+    }
+
+        .UploadingDiv .form button:hover, .UploadingDiv .form button:active, .UploadingDiv .form button:focus {
+            background: burlywood;
+        }
+
+    .UploadingDiv .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+
+        .UploadingDiv .form .message a {
+            color: brown;
+            text-decoration: none;
+        }
+
+    .UploadingDiv .form .register-form {
+        display: none;
+    }
+
+.UploadingDiv .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+    .UploadingDiv .container:before, .UploadingDiv .container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .UploadingDiv .container .info {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+        .UploadingDiv .container .info h1 {
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 36px;
+            font-weight: 300;
+            color: #1a1a1a;
+        }
+
+        .UploadingDiv .container .info span {
+            color: #4d4d4d;
+            font-size: 12px;
+        }
+
+            .UploadingDiv .container .info span a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .UploadingDiv .container .info span .fa {
+                color: #EF3B3A;
+            }
+
+.UploadingDiv body {
+    background: #76b852; /* fallback for old browsers */
+    background: rgb(141, 194, 111);
+    background: linear-gradient(90deg, rgb(141, 194, 111) 0%, rgb(118, 184, 82) 50%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .main-menu {
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #252525;
+        transition: 0.5s all ease;
+        /* visibility: hidden; */
+        display: none;
+        align-items: center;
+        transform: translateX(-800px);
+        padding-top: 60px;
+        z-index: 1111;
+    }
+
+        .navbar .main-menu.show {
+            transform: translateX(0px);
+            transition: 0.5s all ease;
+        }
+
+        .navbar .main-menu li a {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+    .navbar .menu-btn {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 25px;
+        right: 30px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar #mainLogo {
+        height: 20vw;
+    }
+
+    .firstPageDiv {
+        display: flex;
+        margin-top: 10vh;
+        justify-content: space-evenly;
+    }
+
+    .firstPageTitleDiv {
+        height: 25vh;
+    }
+
+        .firstPageTitleDiv h1 {
+            font-size: 3.5rem;
+        }
+
+        .firstPageTitleDiv .div3 {
+            margin-bottom: 5vh;
+        }
+
+        .firstPageTitleDiv .div4 #getStartBtn {
+            background-color: #3973F2;
+            width: 70%;
+            height: 100%;
+            font-size: 1vw;
+        }
+
+            .firstPageTitleDiv .div4 #getStartBtn p {
+                color: white;
+            }
+
+    .firstPageBenefitDiv_contain {
+        margin-top: 5%;
+        width: 55vw;
+    }
+
+        .firstPageBenefitDiv_contain .firstPageBenefitDiv p, .firstPageBenefitDiv_contain .firstPageBenefitDiv h3 {
+            font-size: 0.8rem;
+        }
+
+    .HeroDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+        .HeroDiv #HeroImage {
+            max-width: 100%;
+            max-height: 40vh;
+            margin-top: -5vh;
+        }
+
+    .secondPageDiv {
+        display: flex;
+        padding: 5vw;
+        justify-content: space-between;
+    }
+
+        .secondPageDiv .secondPageAboutDescDiv {
+            width: 50%;
+            margin-top: -5vh;
+        }
+
+            .secondPageDiv .secondPageAboutDescDiv .div1 h3 {
+                font-size: 2rem;
+                margin-bottom: 3vh;
+            }
+
+    .fourthPageDiv {
+        display: flex;
+    }
+
+        .fourthPageDiv .fourthPageHeroDiv {
+            width: 90%;
+        }
+
+    .polaroid {
+        background: #fff;
+        padding: 0.5rem;
+        min-width: 40vw;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    }
+
+        .polaroid > img {
+            max-width: 100%;
+            height: auto;
+        }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar #mainLogo {
+        height: 15vw;
+    }
+
+    .firstPageDiv {
+        margin-top: 10vh;
+        justify-content: space-evenly;
+    }
+
+    .btn-default {
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .firstPageTitleDiv {
+        height: 25vh;
+    }
+
+        .firstPageTitleDiv h1 {
+            font-size: 4.5rem;
+        }
+
+    .secondPageDiv {
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .secondPageDiv .secondPageAboutDescDiv {
+            width: 40%;
+        }
+
+    .fourthPageDiv {
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .fourthPageDiv .fourthPageHeroDiv {
+            width: 50%;
+        }
+
+        .fourthPageDiv .fourthPageDescDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+        }
+
+            .fourthPageDiv .fourthPageDescDiv .div1Title {
+                margin-bottom: 5vh;
+            }
+
+    .polaroid {
+        background: #fff;
+        padding: 0.5rem;
+        min-width: 40vw;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    }
+
+        .polaroid > img {
+            max-width: 100%;
+            height: auto;
+        }
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar #mainLogo {
+        height: 10vw;
+    }
+
+    .btn-default {
+        width: 10vw;
+        border-radius: 5px;
+    }
+
+        .btn-default p {
+            font-size: 1rem;
+        }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .firstPageDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .firstPageTitleDiv {
+        width: 70%;
+        height: 35vh;
+    }
+
+        .firstPageTitleDiv h1 {
+            font-size: 5rem;
+        }
+
+        .firstPageTitleDiv .div3 {
+            margin-top: 3vh;
+        }
+
+    .firstPageBenefitDiv_contain {
+        margin-top: 5%;
+        width: 30%;
+    }
+
+        .firstPageBenefitDiv_contain .firstPageBenefitDiv p, .firstPageBenefitDiv_contain .firstPageBenefitDiv h3 {
+            font-size: 1rem;
+        }
+
+    .HeroDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+        .HeroDiv #HeroImage {
+            max-width: 100%;
+            max-height: 50vh;
+            margin-top: -5vh;
+            border-style: none;
+        }
+
+    .secondPageDiv {
+        display: flex;
+        justify-content: space-around;
+        padding: 5vw;
+    }
+
+        .secondPageDiv h1 {
+            font-size: 5rem;
+        }
+
+        .secondPageDiv .secondPageAboutDescDiv {
+            width: 40%;
+            margin-top: -5vh;
+        }
+
+            .secondPageDiv .secondPageAboutDescDiv .div1 h3 {
+                font-size: 3rem;
+                margin-bottom: 5vh;
+            }
+
+            .secondPageDiv .secondPageAboutDescDiv .div2 p {
+                font-size: 1rem;
+            }
+
+    .fourthPageDiv {
+        display: flex;
+        justify-content: space-around;
+        padding: 0vh 15vw;
+    }
+
+        .fourthPageDiv .fourthPageHeroDiv {
+            width: 50%;
+        }
+
+        .fourthPageDiv .fourthPageDescDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+        }
+
+            .fourthPageDiv .fourthPageDescDiv .div1Title {
+                margin-bottom: 5vh;
+            }
+
+    .polaroid {
+        background: #fff;
+        padding: 0.5rem;
+        min-width: 30vw;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    }
+
+        .polaroid > img {
+            max-width: 100%;
+            height: auto;
+        }
+}
+
+@media only screen and (min-width: 1920px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    .firstPageDiv {
+        display: flex;
+        margin-top: 10vh;
+        justify-content: space-evenly;
+    }
+
+    .firstPageTitleDiv {
+        width: 50%;
+        height: 35vh;
+    }
+
+        .firstPageTitleDiv h1 {
+            font-size: 5rem;
+        }
+
+        .firstPageTitleDiv .div3 {
+            margin-top: 3vh;
+        }
+
+    .firstPageBenefitDiv_contain {
+        margin-top: 5%;
+        width: 30%;
+    }
+
+        .firstPageBenefitDiv_contain .firstPageBenefitDiv p, .firstPageBenefitDiv_contain .firstPageBenefitDiv h3 {
+            font-size: 1rem;
+        }
+
+    .HeroDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+        .HeroDiv #HeroImage {
+            max-width: 100%;
+            max-height: 50vh;
+            margin-top: -5vh;
+            border-style: none;
+        }
+
+    .secondPageDiv {
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .secondPageDiv .secondPageAboutDescDiv {
+            width: 50%;
+            margin-top: -5vh;
+        }
+
+            .secondPageDiv .secondPageAboutDescDiv .div1 h3 {
+                font-size: 3rem;
+            }
+}
+/*# sourceMappingURL=style.css.map */

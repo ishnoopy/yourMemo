@@ -1,0 +1,28 @@
+﻿@model yourMemo.Models.LogInModel
+
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+
+<div class="RegistrationDiv container">
+    <div class="login-page">
+        <div class="form">
+
+            <form class="login-form" asp-action="SignIn">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <input asp-for="Password" class="form-control" type="password" placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+                <input id="signInBtn" type="submit" value="Sign In" class="btn-default" style="background-color: brown; margin-top:5vh;" />
+
+                <p class="message">Not registered? <a asp-action="Registration" id="createanaccount">Create an account</a></p>
+            </form>
+        </div>
+ </div>
+ </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

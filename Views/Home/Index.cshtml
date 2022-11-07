@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="/js/site.js"></script>
+
+
+<body>
+
+
+
+
+
+
+    <div class="firstPageDiv container">
+
+        <div class="firstPageTitleDiv">
+            <div class="div1">
+                <p>LIVE YOUR LIFE</p>
+            </div>
+            <div class="div2">
+                <h1>Moments of a Caring Future.</h1>
+            </div>
+            <div class="div3">
+                <p>Cherish every moment, take pictures, and have your personalized digital album.</p>
+            </div>
+            <div class="div4">
+
+               
+                @if (ViewBag.sessionVerify != null)
+                {
+                    <button class="btn-default"><a asp-action="UploadForm" style="text-decoration:none;"><p>Get Started</p></a></button>
+                }
+                else
+                {
+                    <button class="btn-default"><a asp-action="SignIn" style="text-decoration:none;"><p>Get Started</p></a></button>
+
+                }
+            </div>
+
+        </div>
+        <div class="firstPageBenefitDiv_contain">
+            <div class="firstPageBenefitDiv">
+                <div class="div1Number"><p class="number">01</p></div>
+                <div class="div1Message">
+                    <h3>Visually appealing and easy to use</h3>
+                    <div class="div1P">
+                        <p>yourMemo is an online photo album for you to use in saving pictures with messages.</p>
+
+                    </div>
+                </div>
+                <div class="div1Icon"><img src="/css/components/FirstBenefitIcon.svg" alt=""></div>
+                <div class="div2Number"><p class="number">02</p></div>
+                <div class="div2Message">
+                    <h3>Timeless records</h3>
+                    <div class="div2P">
+                        <p>Your Photos will be like memories that will never fade even when your device breaks.</p>
+
+                    </div>
+                </div>
+                <div class="div2Icon"><img src="/css/components/SecondBenefitIcon.svg" alt=""></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="HeroDiv container">
+        <img src="/css/components/HeroImage.svg" id="HeroImage" alt="">
+    </div>
+
+    <div class="secondPageDiv Container">
+
+        <div class="secondPageTitleDiv">
+            <h1 id="about">About.</h1>
+        </div>
+        <div class="secondPageAboutDescDiv">
+            <div class="div1"><h3>yourMemo</h3></div>
+            <div class="div2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa suscipit perferendis nemo iste error laboriosam quidem sunt aliquam, unde illum libero ipsa ratione tempore minus necessitatibus, veritatis voluptatibus fugit! Earum molestias sequi velit cupiditate ex aliquam consequatur aliquid numquam! Suscipit?</p></div>
+            <div class="div3"><button class="btn-default"><p>Read More</p></button></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="thirdPageDiv container">
+        <div class="parallaxDesc"><h3>Keep your memories with you.</h3></div>
+
+    </div>
+
+
+    <div class="fourthPageDiv_contain">
+        <div class="fourthPageDiv container">
+            <div class="fourthPageHeroDiv">
+                <div class="item">
+                    <div class="polaroid">
+                        <img src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg">
+                        <div class="caption">Date: 03-26-2002</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fourthPageDescDiv">
+                <div class="div1Title"><h1>I Miss London</h1></div>
+                <div class="div1Desc"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolorum repellat nam, deleniti dolor similique in quis ipsum laudantium et.</p></div>
+            </div>
+        </div>
+
+        <div class="fourthPageDiv container">
+            <div class="fourthPageHeroDiv" style="order: 2;">
+
+                <div class="item">
+
+                    <div class="polaroid">
+                        <img src="https://image.ibb.co/hQaarc/antique_blur_camera_828378.jpg">
+                        <div class="caption">Date: 11-25-1998 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourthPageDescDiv" style="order: 1">
+                <div class="div1Title"><h1>Vintage Life</h1></div>
+                <div class="div1Desc"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolorum repellat nam, deleniti dolor similique in quis ipsum laudantium et.</p></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="/js/site.js"></script>
+    </body>

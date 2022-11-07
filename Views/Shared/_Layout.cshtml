@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - yourMemo</title>
+    <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/bbe6615714.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+    <nav class="navbar ">
+        <div class="container">
+            <div class="row">
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="navbar">
+                    <div class="logo">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img id="mainLogo" src="/css/components/MainLogo.svg" alt=""></a>
+                    </div>
+                    <ul class="main-menu">
+                        <li class="list-items"><a asp-area="" asp-controller="Home" asp-action="Index" >Home</a></li>
+                        <li class="list-items"><a asp-area="" asp-controller="Home" asp-action="Index" >About</a></li>
+
+                        @if (ViewBag.sessionVerify != null)
+                        {  
+                                <li class="list-items"><a asp-area="" asp-controller="Home" asp-action="UploadForm">Upload</a></li>
+                            <li class="list-items"><a asp-action="Display" style="">My Album</a></li>
+                            <li class="list-items"><a asp-area="" asp-controller="Home" asp-action="LogOut">Sign Out</a></li>
+                        }
+                        else
+                        {
+                            <li class="list-items"> <a asp-area="" asp-controller="Home" asp-action="SignIn">Sign In</a></li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+
+    
+            @RenderBody()
+
+
+    <section class="footer" style="margin-top:-5vh">
+        <div class="footer-wrap">
+            <h2>yourMemo</h2>
+            <p>save your memories in life 💖</p>
+        </div>
+
+        <div class="footer-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+
+        </div>
+        <h2 class="copyright">Copyright © 2022. Crafted with love.</h2>
+    </section>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

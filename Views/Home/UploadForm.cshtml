@@ -1,0 +1,21 @@
+﻿@model yourMemo.Models.UploadForm
+
+<div class="UploadingDiv container">
+    <div class="uploading-page">
+        <div class="form">
+            <form class="uploading-form" asp-action="Upload" enctype="multipart/form-data" method="post">
+
+                <input type="file" name="file" id="FileName" />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <h3>Caption:</h3>
+
+                <input type="text" name="Message" id="Message"/ placeholder="|"> 
+                <span asp-validation-for="Message" class="text-danger"></span>
+                <input id="uploadBtn" type="submit" value="Upload" />
+               
+            </form>
+        </div>
+        <p class="message"> @ViewBag.Message </p>
+
+    </div>
+</div>
