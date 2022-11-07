@@ -22,7 +22,7 @@ namespace yourMemo.Controllers
         public HomeController(IWebHostEnvironment webHostEnvironment)
         {
             auth = new FirebaseAuthProvider(
-                            new Firebase.Auth.FirebaseConfig("AIzaSyBpDM45w_uF6T_spPjT-526pancb-Nz3So"));
+                            new Firebase.Auth.FirebaseConfig("WEB API KEY"));
             _webHostEnvironment = webHostEnvironment;
         }
 
@@ -131,8 +131,8 @@ namespace yourMemo.Controllers
 
         IFirebaseConfig config = new FirebaseConfig
         {
-            AuthSecret = "mf1yZW9FL1Yb34nb6GvHiuvrLcxdPVIoDxGq3rhW", //database secret
-            BasePath = "https://polaroid-9bd32-default-rtdb.firebaseio.com/" //database url
+            AuthSecret = "secret", //database secret
+            BasePath = "url" //database url
         };
         IFirebaseClient client;
         public IActionResult UploadForm()
